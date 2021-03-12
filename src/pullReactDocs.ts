@@ -4,7 +4,7 @@ import ReactReferenceParser from './parsers/ReactReferenceParser';
 
 
 export const getDocs = async () => {
-    const rootUrl = "https://api.github.com/repos/reactjs/reactjs.org/contents/content/docs";
+    const rootUrl = "https://api.github.com/repos/facebook/react-native-website/contents/docs";
     const files: [GithubResponse] = (await axios.get(rootUrl)).data;
 
     const markdownFiles = files.filter(
